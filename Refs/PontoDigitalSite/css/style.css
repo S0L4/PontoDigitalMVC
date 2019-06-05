@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+h2 {
+    font-size: 2em;
+    color: #0e1674;
+    text-shadow: 2px 2px 2px #000000, 2px 2px 2px #000000;
+    text-align: center;
+    font-family: "Engravers MT";
+    padding: 1.1em;
+}
+
+/* COMEÇO DA NAV */
+
+.nav {
+    display: flex;
+    background-color: #0e1674;
+    width: 100%;
+    height: 300px;
+    padding-right: 2em;
+    padding-left: 4em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav > ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5em;
+    color: #fff;
+    margin-top: 250px;
+    margin-left: auto;
+}
+
+.nav img {
+    width: 300px;
+    height: 300px;
+    margin-top: 94px;
+}
+
+.nav li {
+    padding: 0 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav li:hover {
+    background-color: #e0b00a;
+    text-shadow: 2px 2px 0 #000000, 2px 2px 0 #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.linha_amr {
+    background-color: #e0b00a;
+    width: 100%;
+    height: 40px;
+}
+
+/* FIM DA NAV */
+
+/* COMEÇO DO BANNER */
+
+
+#nome_empresa {
+    font-size: 3.5em;
+    font-family: "Engravers MT";
+    color: #fff;
+    padding-top: 15%;
+}
+
+#nome_empresa p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.452);
+    text-align: center;
+}
+
+#nome_empresa h1 {
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    text-align: center;
+}
+
+.banner {
+    background-image: url(../img/banner\ -\ img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+#text_chamativo {
+    background-color: #e0b00a;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.7em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* FIM DO BANNER */
+
+/* COMEÇO DO PRODUTO */
+
+.produto {
+    padding: 2em;
+    background-color: #0e1674;
+    color: #fff;
+}
+
+.produto h2 {
+    color: #fff;
+}
+
+.produto img {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prod_content1 {
+    margin: 0 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.prod_content2 {
+    margin: 50px 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#video {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FIM DO PRODUTO */
+
+/* COMEÇO DA HISTORIA */
+
+.historia {
+    padding: 2em;
+    text-align: center;
+}
+
+#hist_titulo {
+    margin-left: 940px;
+    margin-top: 50px;
+    padding: 1.5em;
+}
+
+.hist_content {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.hist_imgs {
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgs_prof {
+    background-color: #ffffff;
+}
+
+.linha_amr2 {
+    background-color: #e0b00a;
+    width: 89%;
+    height: 40px;
+    margin: auto;
+}
+
+/* FIM DA HISTTORIA */
+
+/* COMEÇO DOS PLANOS  */
+
+.planos {
+
+    padding: 2em;
+    background-color: #0e1674;
+    color: #fff;
+    background-image: url(../img/banner\ -\ img3.jpg);
+}
+
+.planos h2 {
+    color: #fff;
+}
+
+.planos_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 1.2em;
+    height: 700px;
+}
+
+.planos_box>div {
+    width: 23%;
+    background-color: #0e1674;
+    margin-top: -200px;
+    padding: 1.2em;
+    height: 80%;
+    border-bottom-style: solid;
+    border-bottom-width: 2em;
+    border-bottom-color: #e0b00a;
+    font-size: 1.2em;
+}
+
+.planos h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 1.1em;
+}
+
+.planos h4 {
+    background-color: #e0b00a;
+    color: #0e1674;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+    margin-top: 35%;
+}
+
+#gratis_box {
+    background-color: #0e1674;
+    font-size: 1.5em;   
+    width: 97.5%;
+    margin-left: 28px;
+    margin-bottom: 50px;
+    padding: 1.2em;
+    border-bottom-style: solid;
+    border-bottom-width: 2em;
+    border-bottom-color: #e0b00a;
+}
+
+#gratis_box p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#gratis_box h4 {
+    background-color: #e0b00a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: -65px;
+}
+
+#pagamento {
+    width: 500px;
+    height: 150px;
+    margin-left: 14.5em;
+}
+
+/* FIM DOS PLANOS */
+
+/* COMEÇO DO CONTATO */
+
+.contato {
+    padding: 2em;
+}
+
+.flex{
+    display: flex;
+}
+
+.contato h3 {
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 1.1em;
+    text-align: center;
+}
+
+#sac_box {
+    background-color: #0e1674;
+    width: 43%;
+    color: #fff;
+    text-align: center;
+    margin-left: 5.5%;
+    padding: 1.2em;
+    font-size: 1.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 2em;
+    border-bottom-color: #e0b00a;
+}
+
+#form_contat {
+    background-color: #0e1674;
+    width: 43%;
+    color: #fff;
+    margin-left: 2em;
+    padding: 1.2em;
+    font-size: 1.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 2em;
+    border-bottom-color: #e0b00a;
+}
+
+.coment {
+    background-color: #0e1674;
+    color: #fff;
+    width: 89%;
+    margin-left: 5.5em;
+    padding: 1.2em;
+    margin-top: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 2em;
+    border-bottom-color: #e0b00a;
+}
+
+.coment img {
+    background-color: #e0b00a;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    padding: 0.2em;
+}
+
+.perfil_coment1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.perfil_coment1 p {
+    margin-top: 50px;
+}
+
+.perfil_coment2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.perfil_coment2 p {
+    margin-top: 50px;
+}
+
+.perfil_coment3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.perfil_coment3 p {
+    margin-top: 50px;
+}
+
+/* FIM DO CONTATO */
+
+.rodape {
+    background-color: #000000;
+    padding: 2em;
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+}
+
+/* COMEÇO DO LAYOUT RESPONSIVO */
+
+@media screen and (max-width: 768px){
+
+    .banner {
+        height: 500px;
+    }
+
+    #nome_empresa {
+        font-size: 2.5em;
+    }
+
+    #text_chamativo {
+        font-size: 1em;
+    }
+
+    .produto img {
+        width: 400px;
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    .prod_content1 {
+        display: block;
+    }
+
+    .prod_content2 {
+        display: block;
+    }
+
+    .hist_imgs {
+        display: block;
+        margin-left: -35px;
+    }
+
+    .imgs_prof {
+        display: flex;
+    }
+
+    .planos_box {
+        font-size: 0.9em;
+    }
+
+    .planos h3 {
+        font-size: 1.5em;
+    }
+
+    .planos h4 {
+        margin-top: 40%;
+        font-size: 1.1em;
+    }
+
+    #gratis_box {
+        margin-left: 10px;
+        font-size: 1em;
+    }
+
+    #gratis_box h4 {
+        margin-bottom: -45px;
+    }
+
+    #pagamento img {
+        width: 350px;
+        height: 80px;
+        margin-left: -3.5em;
+        margin-top: 30px;
+    }
+
+    .coment {
+        width: 93%;
+        margin-left: 38px;
+        font-size: 0.6em;
+    }
+
+    .coment img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .coment h3 {
+        font-size: 2em;
+    }
+
+    .perfil_coment1 p {
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+
+    .perfil_coment2 p {
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+
+    .perfil_coment3 p {
+        margin-top: 9px;
+        margin-left: 10px;
+    }
+
+    .contato h3 {
+        font-size: 1.5em;
+    }
+
+    #sac_box {
+        font-size: 1.2em;
+    }
+
+    #form_contat {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .nav img {
+       width: 200px;
+       height: 200px;
+       margin-top: 50px;
+       margin-left: 50px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    #nome_empresa {
+        font-size: 2em;
+        padding-top: 8%;
+    }
+
+    #text_chamativo {
+        font-size: 0.8em;
+    }
+
+    .produto {
+        padding: 1.5em;
+    }
+
+    .produto p {
+        font-size: 0.8em;
+    }
+
+    .produto img {
+        width: 200px;
+        height: 200px;
+        margin-left: -15px;
+    }
+    
+    .produto iframe {
+        height: 200px;  
+    }
+
+    .historia {
+        padding: 1.5em;
+    }
+
+    .hist_content {
+        font-size: 0.9em;
+    }
+
+    .hist_imgs {
+        margin-left: -20px;
+    }
+    
+    .hist_imgs img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .imgs_prof {
+        display: block;
+    }
+
+    .historia iframe {
+        height: 200px;
+    }  
+
+    .contato {
+        padding: 1.5em;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    #sac_box {
+        width: 89%;
+        margin-bottom: 30px;
+    }
+
+    #form_contat {
+        width: 89%;
+        margin-left: 20px;
+    }
+
+    .coment {
+        width: 93%;
+        margin-left: 13px;
+        font-size: 0.6em;
+    }
+
+    .perfil_coment1 {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+
+    .perfil_coment2 {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+
+    .perfil_coment3 {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+}
