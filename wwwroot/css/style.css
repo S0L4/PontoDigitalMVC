@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h2 {
     font-size: 2em;
     color: #0e1674;
