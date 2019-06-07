@@ -18,9 +18,12 @@ namespace PontoDigitalMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult LogarUsuario()
+        public IActionResult ListarUsuario(IFormCollection form)
         {
-            return View();
+            var usario = form["email"];
+            var senha = form["senha"];
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

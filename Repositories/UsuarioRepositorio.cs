@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using PontoDigitalMVC.Models;
@@ -8,7 +9,7 @@ namespace PontoDigitalMVC.Repositories
     {
         public List<UsuarioModel> listaDeUsuarios =  new List<UsuarioModel>();
 
-        public const string PATH = "DataBases/Registros.csv";
+        public const string PATH = "DataBases/Usuarios.csv";
 
         public void InserirUsuario(UsuarioModel cadastro)
         {
@@ -21,8 +22,32 @@ namespace PontoDigitalMVC.Repositories
 
             StreamWriter sw = new StreamWriter(PATH, true);
 
-            sw.WriteLine($"{cadastro.Id};{cadastro.Nome};{cadastro.Email};{cadastro.Senha};{cadastro.DataNascimento}");
+            sw.WriteLine($"Id={cadastro.Id};Nome={cadastro.Nome};Email={cadastro.Email};Senha={cadastro.Senha};DataNascimento={cadastro.DataNascimento}\n");
             sw.Close();
-        }        
+        }
+
+        public List<UsuarioModel> ListaDeUsuarios()
+        {
+            string[] cadastros = File.ReadAllLines(PATH);
+
+            foreach (var item in cadastros)
+            {
+                if(item != null)
+                {
+                    string[] dados = item.Split(";");
+                    var usuario = new UsuarioModel();
+
+                        usuario.Id = int.Parse(dados[0]); 
+                        usuario.Nome = dados[1];
+                        usuario.Email = dados[2];
+                        usuario.Senha = dados[3];
+                        usuario.DataNascimento = DateTime.Parse(dados[4]);
+
+                        listaDeUsuarios.Add(usuario);
+                    continue;
+                }
+            }
+            return listaDeUsuarios;    
+        }      
     }
 }

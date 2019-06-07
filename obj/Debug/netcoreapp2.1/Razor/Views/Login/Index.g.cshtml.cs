@@ -64,12 +64,12 @@ using PontoDigitalMVC.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(34, 215, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42fae0efd980418b829725ceb4ba2a87", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf469d1098524c0bb908af61e149533e", async() => {
                 BeginContext(40, 112, true);
                 WriteLiteral("\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\r\n    ");
                 EndContext();
                 BeginContext(152, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "083243b5f9624223ae96437178f27330", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "477e2bb13b0e44ddb5d1962064401424", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -104,7 +104,7 @@ using PontoDigitalMVC.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(253, 675, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8abd3511fa8244b0937a13bbb3f1404a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "94b16b0843e7411592af54673c15fe02", async() => {
                 BeginContext(259, 151, true);
                 WriteLiteral("\r\n    <nav class=\"nav\">\r\n        <div id=\"logo\">\r\n            <img src=\"img/logo.png\" alt=\"logotipo\">\r\n        </div>\r\n        <ul>\r\n            <li><a");
                 EndContext();

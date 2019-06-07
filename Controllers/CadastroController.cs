@@ -21,7 +21,6 @@ namespace PontoDigitalMVC.Controllers
         public IActionResult CadastrarUsuario(IFormCollection form)
         {
             UsuarioModel usuario = new UsuarioModel();
-            usuario.Id = int.Parse(form["id"]);
             usuario.Nome = form["nome"];
             usuario.Email = form["email"];
             usuario.Senha = form["senha"];

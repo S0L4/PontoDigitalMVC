@@ -21,15 +21,17 @@
 
     <div class="linha_amr"></div>
 
-    <section class="login">
+    <section class="login" >
         <h2>Cadastro</h2>
         <div class="options">
-            <input type="text" name="Nome" placeholder="Nome completo" id="nome" required>
-            <input type="text" name="E-mail" placeholder="E-mail" id="email" required>
-            <input type="password" name="Senha" id="senha" placeholder="Senha" required>
-            <input type="date" name="Data de Nascimento" placeholder="data" id="data" required>
-            
-            <button type="submit" value="Confirmar" id="botao">Confirmar</button>
+            <form action="Cadastro/CadastrarUsuario" method="POST">
+                <input type="text" name="nome" placeholder="Nome completo" id="nome" required>
+                <input type="text" name="email" placeholder="E-mail" id="email" required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                <input type="date" name="data-nascimento" placeholder="data" id="data" required>
+                
+                <input type="submit" value="Confirmar" id="botao">
+            </form>
         </div>
     </section>
 </body>
