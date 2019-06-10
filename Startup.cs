@@ -35,7 +35,7 @@ namespace PontoDigitalMVC
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSession(options => 
             {
-                options.Cookie.Name = "AgoraVaiç.Session";
+                options.Cookie.Name = "AgoraVai.Session";
                 options.IdleTimeout = TimeSpan.FromSeconds(10);
                 options.Cookie.IsEssential = true;
             });

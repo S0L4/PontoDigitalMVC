@@ -22,7 +22,7 @@ namespace PontoDigitalMVC.Repositories
 
             StreamWriter sw = new StreamWriter(PATH, true);
 
-            sw.WriteLine($"Id={cadastro.Id};Nome={cadastro.Nome};Email={cadastro.Email};Senha={cadastro.Senha};DataNascimento={cadastro.DataNascimento}\n");
+            sw.WriteLine($"{cadastro.Id};{cadastro.Nome};{cadastro.Email};{cadastro.Senha};{cadastro.DataNascimento}");
             sw.Close();
         }
 
