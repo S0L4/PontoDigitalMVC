@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <link rel="stylesheet" href="~/css/produto.css" type="text/css">
+    <link rel="stylesheet" href="~/css/comentario.css" type="text/css">
     <title>Login</title>
 </head>
 
@@ -21,14 +21,14 @@
 
     <div class="linha_amr"></div>
 
-    <section>
-        <h2>Compra</h2>
+    <section class="login">
+        <h2>Comentário</h2>
         <div class="options">
-            <form action="Login/LogarUsuario" method="POST">
-                <input type="text" name="email" placeholder="E-mail" id="email" required>
-                <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <form action="Comentario/Comentar" method="POST">
+                <label for="comentario">Digite aqui seu comentário:</label>
+                <textarea name="comentario" id="texto"></textarea>
             
-                <input type="submit" value="Confirmar" id="botao" onclick='alert("Teste")'>
+                <input type="submit" value="Confirmar" id="botao">
             </form>
         </div>
     </section>

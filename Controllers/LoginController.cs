@@ -13,7 +13,6 @@ namespace PontoDigitalMVC.Controllers
         private const string SESSION_EMAIL = "_EMAIL";
         private const string SESSION_CLIENTE= "_ClIENTE";
         
-        [HttpGet]
         public IActionResult Index()
         {
             ViewData["NomeView"] = "Login";

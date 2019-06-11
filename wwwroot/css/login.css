@@ -113,6 +113,10 @@ h2 {
     font-size: 1.2em;
 }
 
+#texto {
+    width: 100%;
+}
+
 #botao {
     display: inline-block;
     font-weight: 800;
