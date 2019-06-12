@@ -9,9 +9,11 @@ namespace PontoDigitalMVC.Controllers
     public class LoginController : Controller
     {
         UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
+        AdministradorRepositorio administradorRepositorio = new AdministradorRepositorio();
 
         private const string SESSION_EMAIL = "_EMAIL";
-        private const string SESSION_CLIENTE= "_ClIENTE";
+        private const string SESSION_CLIENTE = "_ClIENTE";
+        private const string SESSION_ADM = "_ADM";
         
         public IActionResult Index()
         {
@@ -26,7 +28,21 @@ namespace PontoDigitalMVC.Controllers
             var senha = form["senha"];
             
             var cliente = usuarioRepositorio.ListaDeUsuarios();
+            var admin = administradorRepositorio.DadosDoAdministrador();
             
+            foreach (var item in admin)
+            {
+                if (item.SenhaAdm.Equals(senha) && item.EmailAdm.Equals(usuario))
+                {
+                    HttpContext.Session.SetString(SESSION_ADM, usuario);
+                    HttpContext.Session.SetString(SESSION_CLIENTE, item.NomeAdm);
+
+                    return RedirectToAction("Index", "Administrador");
+                } else {
+                    continue;
+                }
+            }
+
             foreach (var item in cliente)
             {
                 if (item != null && item.Senha.Equals(senha) && item.Email.Equals(usuario))

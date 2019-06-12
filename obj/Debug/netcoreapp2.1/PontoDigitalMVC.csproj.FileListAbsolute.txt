@@ -27,5 +27,5 @@ c:\Users\46309932829\Documents\Projetos\SENAI\PontoDigitalMVC\obj\Debug\netcorea
 c:\Users\46309932829\Documents\Projetos\SENAI\PontoDigitalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Cadastro\Index.g.cshtml.cs
 c:\Users\46309932829\Documents\Projetos\SENAI\PontoDigitalMVC\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 c:\Users\46309932829\Documents\Projetos\SENAI\PontoDigitalMVC\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
-c:\Users\46309932829\Documents\Projetos\SENAI\PontoDigitalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Produto\Index.g.cshtml.cs
 c:\Users\46309932829\Documents\Projetos\SENAI\PontoDigitalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Comentario\Index.g.cshtml.cs
+c:\Users\46309932829\Documents\Projetos\SENAI\PontoDigitalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Administrador\Index.g.cshtml.cs

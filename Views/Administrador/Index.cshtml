@@ -1,0 +1,16 @@
+@{
+    Layout = "_Layout";
+}
+
+<nav class="nav">
+    <div id="logo">
+        <img src="img/logo.png" alt="logotipo">
+    </div>
+    <ul>
+        <li><a href='@Url.Action("Usuarios", "Administrador")'>Lista de Usuários</a></li>
+        <li><a href='@Url.Action("Comentarios", "Administrador")'>Lista de Comentários</a></li>
+        <li><a id="bt_logout" asp-controller="Login" asp-action="Logout">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="linha_amr"></div>  

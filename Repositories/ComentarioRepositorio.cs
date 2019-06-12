@@ -22,7 +22,7 @@ namespace PontoDigitalMVC.Repositories
 
             StreamWriter sw = new StreamWriter(PATH, true);
 
-            sw.WriteLine($"{comentario.Id};{comentario.Usuario.Nome};{comentario.Texto};{comentario.DataCriacao};{comentario.Status}");
+            sw.WriteLine($"{comentario.Id};{comentario.Usuario.Nome};{comentario.Texto};{DateTime.Now};{comentario.Status}");
             sw.Close();
         }   
 

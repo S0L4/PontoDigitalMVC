@@ -7,7 +7,10 @@ namespace PontoDigitalMVC.Controllers
 {
     public class ComentarioController : Controller 
     {
+        private const string SESSION_CLIENTE = "_ClIENTE";
+
         ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio ();
+        UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio();
 
         public IActionResult Index () 
         {
@@ -17,14 +20,13 @@ namespace PontoDigitalMVC.Controllers
         public IActionResult Comentar (IFormCollection form) 
         {
             ComentarioModel comentario = new ComentarioModel ();
-            UsuarioModel usuario = new UsuarioModel();
-            usuario.Nome = form["nome"];
-
+            comentario.Usuario = new UsuarioModel();
+            
+            comentario.Usuario.Nome = HttpContext.Session.GetString(SESSION_CLIENTE);
             comentario.Texto = form["comentario"];
 
             comentarioRepositorio.InserirComentario (comentario);
 
-            ViewData["Action"] = "Comentario";
             return RedirectToAction ("Index", "Home");
         }
 
