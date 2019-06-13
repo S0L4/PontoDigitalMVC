@@ -38,6 +38,7 @@ namespace PontoDigitalMVC.Repositories
                     var comentario = new ComentarioModel();
 
                         comentario.Id = int.Parse(dados[0]);
+                        comentario.Usuario = new UsuarioModel();
                         comentario.Usuario.Nome = dados[1];
                         comentario.Texto = dados[2];
                         comentario.DataCriacao = DateTime.Parse(dados[3]);
@@ -48,6 +49,52 @@ namespace PontoDigitalMVC.Repositories
                 }
             }
             return listaDeComentarios;
+        }
+
+        public ComentarioModel BuscarId(int id)
+        {
+            listaDeComentarios = ListaDeComentarios();
+
+            foreach (var item in listaDeComentarios)
+            {
+                if (id == item.Id)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public void Aprovar(int id)
+        {
+            string[] comentarios = File.ReadAllLines(PATH);
+
+            for (int i = 0; i < comentarios.Length; i++)
+            {
+                string[] dados = comentarios[i].Split(";");
+                if (id.ToString() == dados[0])
+                {
+                    comentarios[i] = ($"{dados[0]};{dados[1]};{dados[2]};{dados[3]};{true}");
+                    break;
+                }
+            }
+            File.WriteAllLines(PATH, comentarios);
+        }
+
+        public void Rejeitar(int id)
+        {
+            string[] comentarios = File.ReadAllLines(PATH);
+
+            for (int i = 0; i < comentarios.Length; i++)
+            {
+                string[] dados = comentarios[i].Split(";");
+                if (id.ToString() == dados[0])
+                {
+                    comentarios[i] = "";
+                    break;
+                }
+            }
+            File.WriteAllLines(PATH, comentarios);
         }
     }
 }

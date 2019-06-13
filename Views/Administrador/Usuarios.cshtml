@@ -1,3 +1,4 @@
+@model PontoDigitalMVC.ViewModel.ListasViewModel
 @{
     Layout = "_Layout";
 }
@@ -16,7 +17,8 @@
 
 <div class="linha_amr"></div>  
 
-<table class="table">
+<div class="container">
+<table class="table table-striped">
     <thead class="thead-dark">
         <tr>
             <th>Id</th>
@@ -26,4 +28,16 @@
             <th>Data de Nascimento</th>
         </tr>
     </thead>
+    <tbody>
+
+        @foreach(var u in Model.Usuarios)
+            {
+                <td>@u.Id</td>
+                <td>@u.Nome</td>
+                <td>@u.Email</td>
+                <td>@u.Senha</td>
+                <td>@u.DataNascimento</td>
+            }
+    </tbody>
 </table>
+</div>

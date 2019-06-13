@@ -1,3 +1,4 @@
+@model PontoDigitalMVC.ViewModel.ListasViewModel
 @{
     Layout = "_Layout";
 }
@@ -15,3 +16,30 @@
 </nav>
 
 <div class="linha_amr"></div>  
+
+<div class="container">
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Texto</th>
+            <th>Data da postagem</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach(var c in Model.Comentarios)
+            {
+                <td>@c.Id</td>
+                <td>@c.Usuario.Nome</td>
+                <td>@c.Texto</td>
+                <td>@c.DataCriacao</td>
+                <td>
+                <td><button><a href="/Administrador/AprovarComentario?id=@c.Id">Aprovar</a></button></td>    
+                <td><button><a href="/Administrador/Rejeitar?id=@c.Id">Rejeitar</a></button></td> 
+                </td>
+            }
+    </tbody>
+</table>
+</div>

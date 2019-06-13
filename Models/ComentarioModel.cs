@@ -7,8 +7,7 @@ namespace PontoDigitalMVC.Models
         public int Id { get; set;}
         public UsuarioModel Usuario { get; set;}
         public string Texto { get; set;}
-        public DateTime DataCriacao { get; set;}
+        public DateTime DataCriacao { get; set;}        
         public string Status { get; set;}
-        
     }
 }
