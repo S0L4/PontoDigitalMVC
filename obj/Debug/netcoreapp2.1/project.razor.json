@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\46309932829\\Documents\\Projetos\\SENAI\\PontoDigitalMVC\\PontoDigitalMVC.csproj",
+  "FilePath": "c:\\Users\\marco\\Desktop\\Tiago\\Senai_Trabalhos\\PontoDigitalMVC\\PontoDigitalMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2857,5 +2857,61 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "PontoDigitalMVC",
-  "Documents": []
+  "Documents": [
+    {
+      "FilePath": "Views\\Comentario\\Index.cshtml",
+      "TargetPath": "Views\\Comentario\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Administrador\\Comentarios.cshtml",
+      "TargetPath": "Views\\Administrador\\Comentarios.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Administrador\\Index.cshtml",
+      "TargetPath": "Views\\Administrador\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Administrador\\Usuarios.cshtml",
+      "TargetPath": "Views\\Administrador\\Usuarios.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_HeaderNavBar.cshtml",
+      "TargetPath": "Views\\Shared\\_HeaderNavBar.cshtml",
+      "FileKind": "mvc"
+    }
+  ]
 }

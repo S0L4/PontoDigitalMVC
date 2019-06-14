@@ -61,7 +61,11 @@ namespace PontoDigitalMVC.Controllers
         {
             comentarioRepositorio.Rejeitar(id);
 
-            return View();
+            var listaRecuperadaUsuario = usuarioRepositorio.ListaDeUsuarios();
+            var listaRecuperadaComentario = comentarioRepositorio.ListaDeComentarios();
+            var ListasViewModel = new ListasViewModel(listaRecuperadaComentario, listaRecuperadaUsuario);
+
+            return View("Comentarios", ListasViewModel);
         }
     }
 }
