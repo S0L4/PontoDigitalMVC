@@ -82,7 +82,7 @@ WriteAttributeValue("", 257, Url.Action("Comentarios", "Administrador"), 257, 43
             WriteLiteral(">Lista de Comentários</a></li>\r\n        <li>");
             EndContext();
             BeginContext(345, 71, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f23c7637914c452882e2bf1aa9cd2761", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18b9cdde470b4048bccb5442cc28c040", async() => {
                 BeginContext(406, 6, true);
                 WriteLiteral("Logout");
                 EndContext();

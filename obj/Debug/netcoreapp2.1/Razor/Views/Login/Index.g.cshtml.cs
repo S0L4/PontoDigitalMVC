@@ -68,12 +68,12 @@ using PontoDigitalMVC.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(34, 215, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fbaf22a50d824f55bd14003072a4f882", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bda63788aa084ba18372f739150cabee", async() => {
                 BeginContext(40, 112, true);
                 WriteLiteral("\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\r\n    ");
                 EndContext();
                 BeginContext(152, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1bb90fdf7e364e01913a9d4335172674", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e2c700818e1541d28856d3fbd6940f96", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -108,7 +108,7 @@ using PontoDigitalMVC.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(253, 750, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff3ea47e2b76406389219f34e5f647a9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "363328d8c4474d559cf9e36e5dd88156", async() => {
                 BeginContext(259, 151, true);
                 WriteLiteral("\r\n    <nav class=\"nav\">\r\n        <div id=\"logo\">\r\n            <img src=\"img/logo.png\" alt=\"logotipo\">\r\n        </div>\r\n        <ul>\r\n            <li><a");
                 EndContext();
@@ -123,7 +123,7 @@ WriteAttributeValue("", 417, Url.Action("Index", "Home"), 417, 28, false);
                 WriteLiteral(">Voltar</a></li>\r\n        </ul>\r\n    </nav>\r\n\r\n    <div class=\"linha_amr\"></div>\r\n\r\n    <section class=\"login\">\r\n        <h2>Login</h2>\r\n        <div class=\"options\">\r\n            ");
                 EndContext();
                 BeginContext(626, 336, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e71822f87e8749129f8834025cfabbe5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b313402b61e4c608062a795f95cbb8c", async() => {
                     BeginContext(674, 281, true);
                     WriteLiteral(@"
                 <input type=""text"" name=""email"" placeholder=""E-mail"" id=""email"" required>
