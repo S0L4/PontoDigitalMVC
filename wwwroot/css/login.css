@@ -136,6 +136,33 @@ h2 {
 
 /* FIM DO LOGIN */
 
+/* COMEÇO DO DASHBOARD */
+
+.dashboard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    background-color: #0e1774;
+    box-shadow: 10px 10px 10px #00000080, 10px 10px 10px #00000080;
+    font-size: 1.6em;
+    margin-top: 150px;
+    margin-bottom: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info p {
+    text-align: center;
+    padding: 5.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
 /* COMEÇO DO LAYOUT RESPOSIVO */
 
 @media screen and (max-width: 768px) {
