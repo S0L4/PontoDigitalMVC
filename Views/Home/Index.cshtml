@@ -157,8 +157,9 @@
             <div class="perfil_coment1">
                 @foreach(var ca in Model.Comentarios)
                 {
-                    @if (ca != null)
+                    if (ca.Status)
                     {
+                        <img src="img/img_perfil1.jpg" width="200px" height="200px" alt="perfil 1">
                         <p>@ca.Usuario.Nome</p>
                         <p>@ca.Texto</p>
                         <p>@ca.DataCriacao</p>

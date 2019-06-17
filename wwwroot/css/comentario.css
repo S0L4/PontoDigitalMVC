@@ -14,6 +14,10 @@ h2 {
     padding: 1.1em;
 }
 
+textarea {
+    white-space: pre-wrap;
+}
+
 /* COMEÇO DA NAV */
 
 .nav {
@@ -48,7 +52,7 @@ h2 {
     border-top-right-radius: 10px;
 }
 
-.nav > ul {
+.nav>ul {
     display: flex;
     justify-content: space-around;
     font-size: 2.5em;
@@ -94,7 +98,6 @@ h2 {
     margin-top: 1em;
     font-size: 1.5em;
 }
-
 
 #botao {
     display: inline-block;

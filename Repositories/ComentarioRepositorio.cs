@@ -32,7 +32,7 @@ namespace PontoDigitalMVC.Repositories
 
             foreach (var item in comentarios)
             {
-                if (item != null)
+                if (!string.IsNullOrEmpty(item))
                 {
                     string[] dados = item.Split(";");
                     var comentario = new ComentarioModel();
@@ -42,7 +42,7 @@ namespace PontoDigitalMVC.Repositories
                         comentario.Usuario.Nome = dados[1];
                         comentario.Texto = dados[2];
                         comentario.DataCriacao = DateTime.Parse(dados[3]);
-                        comentario.Status = dados[4];
+                        comentario.Status = bool.Parse(dados[4]);
 
                         listaDeComentarios.Add(comentario);
                     continue;    
@@ -74,7 +74,7 @@ namespace PontoDigitalMVC.Repositories
                 string[] dados = comentarios[i].Split(";");
                 if (id.ToString() == dados[0])
                 {
-                    comentarios[i] = ($"{dados[0]};{dados[1]};{dados[2]};{dados[3]};{true}");
+                    comentarios[i] = ($"{dados[0]};{dados[1]};{dados[2]};{dados[3]};true");
                     break;
                 }
             }
@@ -90,7 +90,8 @@ namespace PontoDigitalMVC.Repositories
                 string[] dados = comentarios[i].Split(";");
                 if (id.ToString() == dados[0])
                 {
-                    comentarios[i] = "";
+                    dados[4] = "false";
+                    comentarios[i] = ($"{dados[0]};{dados[1]};{dados[2]};{dados[3]};{dados[4]}");
                     break;
                 }
             }

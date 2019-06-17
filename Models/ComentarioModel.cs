@@ -8,6 +8,6 @@ namespace PontoDigitalMVC.Models
         public UsuarioModel Usuario { get; set;}
         public string Texto { get; set;}
         public DateTime DataCriacao { get; set;}        
-        public string Status { get; set;}
+        public bool Status { get; set;}
     }
 }

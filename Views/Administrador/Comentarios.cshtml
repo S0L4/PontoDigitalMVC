@@ -43,8 +43,8 @@
                 <td>@c.Texto</td>
                 <td>@c.DataCriacao</td>
                 <td>
-                <td><button><a href="/Administrador/AprovarComentario?id=@c.Id">Aprovar</a></button></td>    
-                <td><button><a href="/Administrador/RejeitarComentario?id=@c.Id">Rejeitar</a></button></td> 
+                <td><button><a href='@Url.Action("AprovarComentario", "Administrador")?id=@c.Id'>Aprovar</a></button></td>    
+                <td><button><a href='@Url.Action("RejeitarComentario", "Administrador")?id=@c.Id'>Rejeitar</a></button></td> 
                 </td>
             }
     </tbody>
